@@ -35,39 +35,35 @@ This project demonstrates user authentication, protected routes, password hashin
 - Input validation middleware
 - Clean dashboard layout
 
----
-
 ## 🏗️ Project Architecture
 
-
+```
 taskmanager/
 │
 ├── db/
-│ └── db.js
+│   └── db.js
 │
 ├── routes/
-│ ├── authroutes.js
-│ ├── taskroutes.js
-│ └── userroutes.js
+│   ├── authroutes.js
+│   ├── taskroutes.js
+│   └── userroutes.js
 │
 ├── middleware/
-│ ├── authmiddleware.js
-│ ├── validateemail.js
-│ └── validatepassword.js
+│   ├── authmiddleware.js
+│   ├── validateemail.js
+│   └── validatepassword.js
 │
 ├── public/
-│ ├── signup.html
-│ ├── login.html
-│ ├── dashboard.html
-│ ├── script.js
-│ └── style.css
+│   ├── signup.html
+│   ├── login.html
+│   ├── dashboard.html
+│   ├── script.js
+│   └── style.css
 │
 ├── server.js
 ├── package.json
 └── .gitignore
-
-
----
+```
 
 ## ⚙️ How To Run Locally
 
