@@ -70,7 +70,7 @@ taskmanager/
 1. Clone the repository:
 
 
-git clone https://github.com/your-username/task-manager-fullstack.git
+git clone https://github.com/rajeetvk/task-manager-fullstack.git
 
 
 2. Navigate into the project folder:
@@ -85,11 +85,18 @@ cd task-manager-fullstack
 npm install
 
 
-4. Create a `.env` file in the root directory:
+4. Create a `.env` file in the root directory and add:
 
-
+```
 SECRET_KEY=your_secret_key_here
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_NAME=taskmanager
+```
 
+Note: PORT is optional. The application defaults to 5000 for local development.
+```
 
 5. Make sure MySQL is running and create a database named:
 
