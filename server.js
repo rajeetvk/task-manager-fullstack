@@ -1,5 +1,5 @@
 require("dotenv").config();
-
+const path = require("path");
 const express=require("express");
 const authroutes = require("./routes/authroutes");
 const userroutes = require("./routes/userroutes");
@@ -27,6 +27,9 @@ app.listen(PORT, () => {
 
 const PORT = process.env.PORT || 5000;
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "login.html"));
+});
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server started on port ${PORT}`);
 });
